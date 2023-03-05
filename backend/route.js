@@ -17,7 +17,7 @@ app.post("/add", async (req, res) => {
     }
 });
 
-app.get("/item", async (req, res) => {
+app.get("/", async (req, res) => {
   const getItem = await ItemsModel.find({});
 
   try {
