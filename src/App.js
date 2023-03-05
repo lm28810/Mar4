@@ -1,20 +1,23 @@
 
 import './App.css';
-import NavBar from './NavBar';
-import Advice from './pages/Advice';
 import { Route, Routes } from 'react-router-dom';
-import ToDoList from './pages/TodoList';
+import TodoList from './pages/TodoList';
+import Advice from './pages/Advice';
+import NavBar from './NavBar';
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+  
+      <NavBar />
+      <Advice/>
       
       
+{/*       
       <Routes>
-        <Route path='/' element={ <ToDoList/>} />
+        <Route path='/' element={ <TodoList/>} />
         <Route path='/advice' element={ <Advice/>} />
-      </Routes>
+      </Routes>  */}
     </div>
   );
 }
